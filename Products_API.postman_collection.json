@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "8c28559a-c077-4308-9562-b269266e70bc",
+		"name": "Products_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get_all_Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\": \"STEELMADE------Pro series flat top ultimate kit - Gas OR Electric Coil 30 Range Stoves\",\r\n\"description\": \"The Pro Series Ultimate Kit for Gas or Electric Coil 30inch Range Stoves is a long awaited bundle that includes everything you need for maximizing your cooking experience with your new Pro Series Flat Top griddle. This easy-to-order kit includes the following: PRO Series Flat Top 1/2 Rectangle Drip Tray End Grain -Cover Board (your choice of Maple End Grain or Walnut End Grain)-Bottle of Cover Board Maintenance Oil- Flat Top Care Kit- Flat Top Tool Set. The PRO Series Steelmade Flat Top Grill takes everything great about the standard Flat Top to the next level. Using steel that is twice as thick provides more even heating, faster cooking faster temperature recovery times, and higher maximum temperatures for specialized cooking. The Steelmade Flat Top Grill is the perfect accessory to transform your standard range stove into a flexible and fun flat top griddle. Eliminate multiple pans and skillets and make amazing food for breakfast, lunch, and dinner on one unique cooktop that only gets better with age. Our PRO Series Flat Top is designed for common 30 gas and electric ranges with up to 5 burners. If you're unsure if your stove will work you are invited to send a photo and measurements to info@steelmadeusa.com and we can verify for you. Custom sizes are also available. Extra large 27 inch x 20 inch cooking surface-Hand oiled finish creates a naturally non-stick surface-Includes- dishwasher-safe removable grease trap Heavy duty 3/8 mild steel construction features a lifetime warranty Made in Kansas with American Steel Max Temperature Rating 600 Degrees Fahrenheit Weighs 68 pounds Custom Engraving Now Available! We are excited to announce that customizable laser engraving is now available for Cover Boards. To get your new Cover Board engraved please visit this link and select the size board you are ordering. This will display a number of designs that can be customized with your personal info entered on the product page. Custom Engraving must be purchased at the same time as your Cover Board.\",\r\n\r\n\"price\": \"607.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Product_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/4/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 5,\r\n        \"title\": \"STEELMADE------Pro series flat top ultimate kit - Gas OR Electric Coil 30 Range Stoves\",\r\n        \"description\": \"The Pro Series Ultimate Kit for Gas or Electric Coil 30inch Range Stoves is a long awaited bundle that includes everything you need for maximizing your cooking experience with your new Pro Series Flat Top griddle. This easy-to-order kit includes the following: PRO Series Flat Top 1/2 Rectangle Drip Tray End Grain -Cover Board (your choice of Maple End Grain or Walnut End Grain)-Bottle of Cover Board Maintenance Oil- Flat Top Care Kit- Flat Top Tool Set. The PRO Series Steelmade Flat Top Grill takes everything great about the standard Flat Top to the next level. Using steel that is twice as thick provides more even heating, faster cooking faster temperature recovery times, and higher maximum temperatures for specialized cooking. The Steelmade Flat Top Grill is the perfect accessory to transform your standard range stove into a flexible and fun flat top griddle. Eliminate multiple pans and skillets and make amazing food for breakfast, lunch, and dinner on one unique cooktop that only gets better with age. Our PRO Series Flat Top is designed for common 30 gas and electric ranges with up to 5 burners. If you're unsure if your stove will work you are invited to send a photo and measurements to info@steelmadeusa.com and we can verify for you. Custom sizes are also available. Extra large 27 inch x 20 inch cooking surface-Hand oiled finish creates a naturally non-stick surface-Includes- dishwasher-safe removable grease trap Heavy duty 3/8 mild steel construction features a lifetime warranty Made in Kansas with American Steel Max Temperature Rating 600 Degrees Fahrenheit Weighs 68 pounds Custom Engraving Now Available! We are excited to announce that customizable laser engraving is now available for Cover Boards. To get your new Cover Board engraved please visit this link and select the size board you are ordering. This will display a number of designs that can be customized with your personal info entered on the product page. Custom Engraving must be purchased at the same time as your Cover Board.\",\r\n        \"price\": 607.0,\r\n        \"product_image\": \"https://steelmadeusa.com/collections/flat-top-grills/products/pro-series-flat-top-ultimate-kit-gas-or-electric-coil-30-range-stoves#\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
